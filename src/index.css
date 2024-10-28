@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Averia+Serif+Libre:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -21,101 +21,123 @@
     }
 }
 
-
-
 /* Global Styles */
-body {
-  background-color: var(--primary-bg);
-  color: var(--primary-text);
-  transition: background-color 0.3s ease, color 0.3s ease;
-  font-family: poppins !important;
-  color: white;
+:root {
+    --bg-color-light: #ffffbe; /* light beige */
+    --text-color-light: #000000; /* black */
+    --bg-color-dark: #1f103f; /* dark background */
+    --text-color-dark: #ffffff; /* white */
 }
 
-/* Dark Mode Styles */
-body[data-theme="dark"] {
-  background-color: var(--primary-bg);
-  color: var(--primary-text);
+body {
+    background-color: var(--bg-color-light);
+    color: var(--text-color-light);
+}
+
+body.dark-mode {
+    background-color: var(--bg-color-dark);
+    color: var(--text-color-dark);
 }
 
 .home-img {
-  animation: imgg 2s ease-in-out infinite;
-  animation-delay: 2s;
+    animation: imgg 2s ease-in-out infinite;
+    animation-delay: 2s;
 }
 
 @keyframes imgg {
-  0% {
-    transform: translateY(0);
-  }
-  50% {
-    transform: translateY(-22px);
-  }
-  100% {
-    transform: translateY(0);
-  }
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-22px);
+    }
+    100% {
+        transform: translateY(0);
+    }
 }
+
 .hamburger {
-  position: relative;
-  width: 40px;
-  height: 40px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  cursor: pointer;
+    position: relative;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
 }
 
 .hamburger .bar {
-  content: '';
-  display: block;
-  width: 100%;
-  height: 4px;
-  background-color: #fff;
-  margin: 3px 0;
-  transition: transform 0.3s ease, opacity 0.3s ease;
+    content: '';
+    display: block;
+    width: 100%;
+    height: 4px;
+    background-color: #fff;
+    margin: 3px 0;
+    transition: transform 0.3s ease, opacity 0.3s ease;
 }
 
 .hamburger.is-active .bar:nth-child(1) {
-  transform: rotate(45deg) translate(5px, 5px);
+    transform: rotate(45deg) translate(5px, 5px);
 }
 
 .hamburger.is-active .bar:nth-child(2) {
-  opacity: 0;
+    opacity: 0;
 }
 
 .hamburger.is-active .bar:nth-child(3) {
-  transform: rotate(-45deg) translate(5px, -5px);
+    transform: rotate(-45deg) translate(5px, -5px);
 }
+
 @keyframes wave {
-  0% {
-    transform: translateX(-10px); /* Start slightly off-screen to the left */
-  }
-  50% {
-    transform: translateX(10px); /* Move slightly to the right */
-  }
-  100% {
-    transform: translateX(-10px); /* Move back to the starting position */
-  }
+    0% {
+        transform: translateX(-10px); /* Start slightly off-screen to the left */
+    }
+    50% {
+        transform: translateX(10px); /* Move slightly to the right */
+    }
+    100% {
+        transform: translateX(-10px); /* Move back to the starting position */
+    }
 }
 
 .wave-animation {
-  display: inline-block; /* Allows the emoji to animate */
-  animation: wave 1s ease-in-out infinite; /* Animation settings */
+    display: inline-block; /* Allows the emoji to animate */
+    animation: wave 1s ease-in-out infinite; /* Animation settings */
 }
+
 @keyframes moveIn {
-  0% {
-    transform: translateY(100%); /* Start from below */
-    opacity: 0; /* Start invisible */
-  }
-  50% {
-    opacity: 1; /* Halfway visible */
-  }
-  100% {
-    transform: translateY(0); /* End at original position */
-  }
+    0% {
+        transform: translateY(100%); /* Start from below */
+        opacity: 0; /* Start invisible */
+    }
+    50% {
+        opacity: 1; /* Halfway visible */
+    }
+    100% {
+        transform: translateY(0); /* End at original position */
+    }
 }
 
 .letter {
-  display: inline-block; /* Each letter is a block */
-  opacity: 0; /* Start invisible */
+    display: inline-block; /* Each letter is a block */
+    opacity: 0; /* Start invisible */
+}
+.hacker-text {
+  color: #00ff00;
+  text-shadow: 0px 0px 8px #00ff00;
+  
+}
+.loader {
+  border: 4px solid #f3f3f3;
+  border-top: 4px solid #3498db;
+  border-radius: 50%;
+  width: 24px;
+  height: 24px;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
 }

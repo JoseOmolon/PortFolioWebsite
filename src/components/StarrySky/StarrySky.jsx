@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import anime from "animejs";
 import "./StarrySky.css";
 
-const StarrySky = () => {
+const StarrySky = ({ isDarkMode }) => {
   const [vw, setVw] = useState(window.innerWidth);
   const [vh, setVh] = useState(window.innerHeight);
 
@@ -11,44 +11,36 @@ const StarrySky = () => {
       setVw(window.innerWidth);
       setVh(window.innerHeight);
     };
-
-    window.addEventListener('resize', handleResize);
-    // Cleanup on unmount
-    return () => window.removeEventListener('resize', handleResize);
+    window.addEventListener("resize", handleResize);
+    return () => window.removeEventListener("resize", handleResize);
   }, []);
 
   useEffect(() => {
-    // Starry night animation
     anime({
       targets: "#sky .star",
-      opacity: [
-        { duration: 700, value: "0" },
-        { duration: 700, value: "1" },
-      ],
+      opacity: [{ duration: 400, value: "0" }, { duration: 400, value: "1" }],
       easing: "linear",
       loop: true,
-      delay: (_, i) => 50 * i,
+      delay: (_, i) => 10 * i, // Increased frequency
     });
-
-    // Shooting stars animation
+  
     anime({
       targets: "#shootingstars .wish",
       easing: "linear",
       loop: true,
-      delay: (_, i) => 1000 * i,
-      opacity: [{ duration: 700, value: "1" }],
+      delay: (_, i) => 200 * i, // Increased frequency of shooting stars
+      opacity: [{ duration: 500, value: "1" }],
       width: [{ value: "150px" }, { value: "0px" }],
       translateX: 350,
     });
-  }, []);
+  }, [isDarkMode]);
 
   const randomRadius = () => Math.random() * 0.7 + 0.6;
-
   const getRandomX = () => Math.random() * vw;
   const getRandomY = () => Math.random() * vh;
 
   return (
-    <div id="starry-sky">
+    <div id="starry-sky" className={isDarkMode ? "dark-mode" : "light-mode"}>
       <svg id="sky">
         {[...Array(60)].map((_, i) => (
           <circle
@@ -56,13 +48,13 @@ const StarrySky = () => {
             cx={getRandomX()}
             cy={getRandomY()}
             r={randomRadius()}
-            fill="white" // You might want to change this for dark mode visibility
+            fill={isDarkMode ? "white" : "grey"}
             className="star"
           />
         ))}
       </svg>
       <div id="shootingstars">
-        {[...Array(60)].map((_, i) => (
+        {[...Array(10)].map((_, i) => (
           <div
             key={i}
             className="wish"

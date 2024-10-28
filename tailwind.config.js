@@ -16,6 +16,7 @@ export default {
         poppins: ["Poppins", "sans-serif"],
         averia: ["Averia Serif Libre", "serif"],
         sans: ['Inter', 'ui-sans-serif', 'system-ui', 'sans-serif'],
+        roboto: ['Roboto Mono', 'monospace']
       },
       container: {
         center: true,
