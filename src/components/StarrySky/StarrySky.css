@@ -1,0 +1,37 @@
+/* src/components/StarrySky.css */
+
+#starry-sky {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    background: #1f103f;
+    z-index: -1;
+  }
+  
+  #sky {
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    overflow: hidden;
+  }
+  
+  #shootingstars {
+    width: 150vh;
+    height: 100vw;
+    position: fixed;
+    transform: translateX(calc(50vw - 50%)) translateY(calc(50vh - 50%))
+      rotate(120deg);
+  }
+  
+  .wish {
+    height: 2px;
+    width: 100px;
+    opacity: 0;
+    background: linear-gradient(-45deg, white, rgba(0, 0, 255, 0));
+    filter: drop-shadow(0 0 6px white);
+    position: absolute;
+  }
+  
