@@ -56,7 +56,7 @@ const StarrySky = () => {
             cx={getRandomX()}
             cy={getRandomY()}
             r={randomRadius()}
-            fill="white"
+            fill="white" // You might want to change this for dark mode visibility
             className="star"
           />
         ))}

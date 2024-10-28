@@ -1,6 +1,6 @@
 /** @type {import('tailwindcss').Config} */
 export default {
-  darkMode: ['selector', '[data-mode="dark"]'],
+  darkMode: 'class', // Change this line
   content: [
     "./index.html",
     "./src/**/*.{js,ts,jsx,tsx}",
@@ -8,15 +8,16 @@ export default {
   theme: {
     extend: {
       colors: {
-        primary: '#de0029',
+        primary: '#de0029', // Primary color
+        light: '#d8c8a2',   // Light beige color
+        dark: '#1f103f',    // Dark mode color
       },
-        fontFamily: {
+      fontFamily: {
         poppins: ["Poppins", "sans-serif"],
         averia: ["Averia Serif Libre", "serif"],
         sans: ['Inter', 'ui-sans-serif', 'system-ui', 'sans-serif'],
-
       },
-      container:{
+      container: {
         center: true,
         padding: {
           default: "1rem",
