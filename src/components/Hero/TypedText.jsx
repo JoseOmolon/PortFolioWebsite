@@ -7,9 +7,9 @@ const TypedText = () => {
 
   useEffect(() => {
     const options = {
-    strings: ["Experienced in the Tech Industry for over a decade","innovative problem-solver", "collaborative team player", "driven by results"],
+    strings: ["I have over a decade of experience in the Tech Industry","I am an innovative problem-solver", "I'm a collaborative team player", "Interested?", "Hire me, let's talk..", "Click on the links below:"],
       typeSpeed: 100,
-      backSpeed: 50,
+      backSpeed: 1,
       loop: true,
     };
 
@@ -22,7 +22,7 @@ const TypedText = () => {
 
   return (
     <p className="text-base sm:text-lg md:text-xl font-roboto hacker-text">
-      I am <span ref={typedElement} />
+      <span ref={typedElement} />
     </p>
   );
 };

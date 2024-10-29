@@ -8,7 +8,7 @@ import StarrySky from "../StarrySky/StarrySky"; // Import your StarrySky compone
 
 const Navbar = () => {
   const [open, setOpen] = useState(false);
-  const [theme, setTheme] = useState(localStorage.getItem('theme') || "light");
+  const [theme, setTheme] = useState(localStorage.getItem('theme') || "dark");
 
   const applyTheme = (newTheme) => {
     document.body.style.color = newTheme === "dark" ? "white" : "black"; 

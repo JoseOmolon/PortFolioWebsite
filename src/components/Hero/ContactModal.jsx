@@ -68,7 +68,7 @@ const ContactModal = ({ isOpen, onClose }) => {
 
         {!loading && !success && (
           <form onSubmit={handleSubmit} className='text-black'>
-            <h1 className='text-lg font-semibold'>Send me an Message 🕵️</h1>
+            <h1 className='text-lg font-semibold'>Send me a Message 🕵️</h1>
             <br />
             <div className="mb-4">
               <label className="block text-sm font-medium text-gray-700">Name</label>
