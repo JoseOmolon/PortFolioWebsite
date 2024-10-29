@@ -7,6 +7,7 @@ const ResponsiveMenu = ({ open, setOpen }) => {
       className={`fixed inset-0 bg-[#12002f] transform transition-transform duration-500 ease-in-out ${
         open ? "translate-x-0 opacity-100" : "translate-x-full opacity-0"
       }`}
+      style={{ zIndex: 999 }} // Ensure the menu appears above other content
     >
       <div className="flex flex-col items-center pt-32 space-y-4">
         {/* Hamburger button */}

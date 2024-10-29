@@ -2,6 +2,8 @@ import React, { useState, useEffect } from "react";
 import Navbar from "./components/Navbar/Navbar";
 import Hero from "./components/Hero/Hero";
 import StarrySky from "./components/StarrySky/StarrySky";
+import Projects from "./components/Projects/Projects"
+import ScrollIcons from "./components/ScrollIcons/ScrollIcons";
 
 const App = () => {
   const [theme, setTheme] = useState(localStorage.getItem("theme") || "light");
@@ -21,6 +23,8 @@ const App = () => {
       <Navbar toggleTheme={toggleTheme} theme={theme} />
       <StarrySky isDarkMode={theme === "dark"} />
       <Hero />
+      <Projects />
+      <ScrollIcons />
     </>
   );
 };

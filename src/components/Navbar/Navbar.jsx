@@ -31,19 +31,22 @@ const Navbar = () => {
     { name: "Home", icon: <FaHome /> },
     { name: "Projects", icon: <FaProjectDiagram /> },
     { name: "About Me", icon: <FaUserAlt /> },
-    { name: "Skills", icon: <FaClipboardList /> }, // Updated here
+    { name: "Skills", icon: <FaClipboardList /> },
     { name: "Experience", icon: <FaBriefcase /> },
   ];
-  
 
   return (
-    <>
-      <nav className="fixed top-0 left-0 w-full z-10 bg-transparent font-poppins">
-        <div className="container flex justify-between items-center py-4">
+    <section className="relative inline-block w-full">
+      <nav className="bg-transparent font-poppins z-10">
+        <div className="container mx-auto flex justify-between items-center py-4 px-4">
           <img src="src/assets/JoseLogo.png" alt="Logo" className="h-12" />
           <div className="hidden md:flex items-center space-x-6 text-lg font-extralight">
             {menuItems.map(({ name, icon }) => (
-              <a key={name} href={`#${name.toLowerCase().replace(/\s+/g, '-')}`} className="flex items-center hover:text-red-500 transition">
+              <a
+                key={name}
+                href={`#${name.toLowerCase().replace(/\s+/g, '-')}`}
+                className="flex items-center hover:text-red-500 transition"
+              >
                 {icon}
                 <span className="ml-2">{name}</span>
               </a>
@@ -62,7 +65,7 @@ const Navbar = () => {
         <ResponsiveMenu open={open} setOpen={setOpen} />
       </nav>
       <StarrySky isDarkMode={theme === "dark"} />
-    </>
+    </section>
   );
 };
 

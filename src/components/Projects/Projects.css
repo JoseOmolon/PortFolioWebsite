@@ -1,0 +1,26 @@
+.carousel-container {
+    position: relative;
+  }
+
+  .carousel-item, .carousel-image:hover{
+    transform: translateY(-10px);
+  }
+  
+  .carousel-item {
+    cursor: pointer;
+    text-align: center;
+    transition: transform 250ms;
+  }
+  
+  .carousel-image {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    transition: transform 250ms;
+    
+
+  }
+  
+  div {
+    font-family: poppins;
+  }
