@@ -40,7 +40,7 @@ const Navbar = () => {
       <nav className="bg-transparent font-poppins z-10">
         <div className="container mx-auto flex justify-between items-center py-4 px-4">
           <img src="src/assets/JoseLogo.png" alt="Logo" className="h-12" />
-          <div className="hidden md:flex items-center space-x-6 text-lg font-extralight">
+          <div className="hidden md:flex items-center space-x-6 text-pretty font-light">
             {menuItems.map(({ name, icon }) => (
               <a
                 key={name}

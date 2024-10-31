@@ -12,7 +12,7 @@ const Hero = () => {
   const [modalOpen, setModalOpen] = useState(false);
 
   return (
-    <section id="home" className="container flex flex-col md:flex-row items-center min-h-[800px] space-y-6 md:space-y-0 md:space-x-12 py-20 dark:text-white font-poppins">
+    <section id="home" className="container flex flex-col md:flex-row items-center min-h-[820px] space-y-6 md:space-y-0 md:space-x-12 py-20 font-poppins">
       <div className="flex flex-col space-y-6 md:w-1/2 text-center md:text-left">
         <motion.h1 
           className="text-3xl sm:text-4xl md:text-5xl font-black leading-tight tracking-wide"
@@ -24,7 +24,7 @@ const Hero = () => {
         </motion.h1>
         <br />
         <motion.p
-          className="text-lg sm:text-xl md:text-2xl font-extralight dark:text-white"
+          className="text-lg sm:text-xl md:text-2xl font-extralight "
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
@@ -38,16 +38,19 @@ const Hero = () => {
         initial="hidden"
         animate="visible"
         className="flex space-x-6 justify-center md:justify-start">
-          <button className="primary-btn flex items-center space-x-2">
-            <span>Download Resume</span>
+          <button className="primary-btn flex items-center space-x-1 sm:m-3">
+          
+            <span> Download Resume </span>
             <BiDownload />
           </button>
           <button 
             onClick={() => setModalOpen(true)}
-            className="primary-btn flex items-center space-x-2"
+            className="primary-btn flex items-center space-x-1 sm:m-3"
           >
-            <span>Contact Me</span>
-            <GrContact />
+            <span>Contact Me </span><GrContact />
+             
+            
+           
           </button>
         </motion.div>
         <div className="flex space-x-4 justify-center md:justify-start mt-4">

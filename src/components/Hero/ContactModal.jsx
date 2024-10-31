@@ -37,11 +37,22 @@ const ContactModal = ({ isOpen, onClose }) => {
     }
   };
 
+  const handleClickOutside = (e) => {
+    if (e.target.classList.contains("modal-overlay")) {
+      onClose();
+    }
+  };
+
   if (!isOpen) return null;
 
   return (
-    <div className="fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-50">
+    <div className="fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-50 modal-overlay" onClick={handleClickOutside}>
       <div className="bg-white rounded-lg p-6 shadow-lg max-w-md w-full relative">
+        {/* Close button */}
+        <button onClick={onClose} className="absolute top-2 right-2 text-gray-500 hover:text-gray-700">
+          &times;
+        </button>
+        
         <h2 className="text-xl font-bold mb-4">Contact Me</h2>
         
         {loading && (
@@ -62,7 +73,7 @@ const ContactModal = ({ isOpen, onClose }) => {
 
         {error && (
           <div className="text-red-500 text-center mb-4">
-            ❌ Failed to send message. Please try again later.
+            ❌ Failed to send message. Please try again later or email me directly at jmomolon@gmail.com
           </div>
         )}
 
@@ -105,13 +116,6 @@ const ContactModal = ({ isOpen, onClose }) => {
             </div>
             <button type="submit" className="primary-btn w-full">
               Send Message
-            </button>
-            <button
-              type="button"
-              onClick={onClose}
-              className="mt-2 text-gray-500 hover:underline"
-            >
-              Cancel
             </button>
           </form>
         )}

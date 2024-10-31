@@ -4,6 +4,9 @@ import Hero from "./components/Hero/Hero";
 import StarrySky from "./components/StarrySky/StarrySky";
 import Projects from "./components/Projects/Projects"
 import ScrollIcons from "./components/ScrollIcons/ScrollIcons";
+import About from "./components/About/About";
+import SkillsCarousel from "./components/SkillsCarousel/SkillsCarousel";
+import ExperienceTimeline from "./components/ExperienceTimeline/ExperienceTimeline";
 
 const App = () => {
   const [theme, setTheme] = useState(localStorage.getItem("theme") || "light");
@@ -24,6 +27,9 @@ const App = () => {
       <StarrySky isDarkMode={theme === "dark"} />
       <Hero />
       <Projects />
+      <About />
+      <SkillsCarousel />
+      <ExperienceTimeline />
       <ScrollIcons />
     </>
   );
