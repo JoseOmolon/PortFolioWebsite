@@ -1,55 +1,56 @@
 import { useState } from 'react';
 import { Carousel } from 'react-responsive-3d-carousel';
-import './Projects.css'; // Make sure to link your CSS file
+import './Projects.css'; 
+import { motion } from "framer-motion";
+import { FadeRight } from "../../utility/animation";
 
 import { FaGithub, FaExternalLinkAlt, FaTimes } from "react-icons/fa";
 
 const projectData = [
   {
     id: 1,
-    image: "/src/assets/WebSamples/sample1.webp",
-    title: "Beautiful Spring Garden",
-    description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the",
-    technologies: ["React", "JavaScript", "HTML", "Tailwind"],
-    github: "https://github.com/example/repo",
-    live: "https://example.com/live"
+    image: "/src/assets/WebSamples/PortfolioWebsitev1.png",
+    title: "My Portfolio website version 1",
+    description: "Crafted with Vanilla JS, HTML, CSS, and Bootstrap, this dynamic portfolio showcases my journey into web development. A sleek, responsive design and interactive elements make this site a memorable first project.",
+    technologies: ["BootStrap", "JavaScript", "HTML", "CSS"],
+    github: "https://github.com/BobchopGaming/myprofile.io",
+    live: "https://bobchopgaming.github.io/myprofile.io/"
   },
-  // Repeat this object with different IDs or images as needed
-  // Example below:
+  
   {
     id: 2,
-    image: "/src/assets/WebSamples/sample2.webp",
-    title: "Beautiful Spring Garden",
-    description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the",
-    technologies: ["React", "JavaScript", "HTML", "Tailwind"],
-    github: "https://github.com/example/repo",
+    image: "/src/assets/WebSamples/NataliaApp.gif",
+    title: "Natalia Baby Educational WebApp",
+    description: "A special web app crafted for my baby, featuring unique mini educational games and quizzes I developed, alongside curated YouTube educational videos. Built with React and Tailwind, this fully responsive app includes a custom modal video player for a seamless learning experience across all devices.",
+    technologies: ["React", "JavaScript", "RESTful API", "Tailwind", "Framer-Motion"],
+    github: "https://github.com/BobchopGaming/NataliaApp2",
     live: "https://example.com/live"
   },
   {
     id: 3,
-    image: "/src/assets/WebSamples/sample3.jpg",
-    title: "Beautiful Spring Garden",
-    description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the",
-    technologies: ["React", "JavaScript", "HTML", "Tailwind"],
-    github: "https://github.com/example/repo",
+    image: "/src/assets/WebSamples/TrailerTube.gif",
+    title: "Trailer Tube",
+    description: "TrailerTube is an interactive website I developed that pulls data from TMDB, enabling users to search for movies and shows. Discover the top trending films, view ratings, and watch trailers to help decide what to watch next. Experience movie exploration like never before with my user-friendly platform.",
+    technologies: ["BootStrap", "JavaScript", "HTML", "CSS", "RESTful API"],
+    github: "https://github.com/BobchopGaming/API_TrailerFlix/blob/main/index.html",
     live: "https://example.com/live"
   },
   {
     id: 4,
-    image: "/src/assets/WebSamples/sample4.jpg",
-    title: "Beautiful Spring Garden",
-    description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the",
-    technologies: ["React", "JavaScript", "HTML", "Tailwind"],
-    github: "https://github.com/example/repo",
+    image: "/src/assets/WebSamples/TaskNest.gif",
+    title: "TaskNest Admin Dashboard",
+    description: "TaskNest is an intuitive Admin Dashboard I created, featuring a weather widget, stock tracker, calendar, to-do app, and email integration. Built with React, Material UI, and Tailwind CSS, this user-friendly platform streamlines productivity, providing essential tools all in one place for efficient task management",
+    technologies: ["React", "Material-UI", "JavaScript", "Tailwind"],
+    github: "https://github.com/BobchopGaming/AdminDashboard",
     live: "https://example.com/live"
   },
   {
     id: 5,
-    image: "/src/assets/WebSamples/sample5.png",
-    title: "Beautiful Spring Garden",
-    description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the",
-    technologies: ["React", "JavaScript", "HTML", "Tailwind"],
-    github: "https://github.com/example/repo",
+    image: "/src/assets/WebSamples/ChefNataliaRecipe.gif",
+    title: "Chef Natalia Recipe Web App",
+    description: "Chef Natalia Recipe Web App is a culinary companion that lets users search for recipes by meal type, category, and preparation steps. With an intuitive interface, it simplifies discovering delicious dishes and exploring diverse cuisines. Fully responsive and interactive, it’s crafted to inspire any home chef’s next creation.",
+    technologies: ["React", "Tailwind", "Framer-motion", "JavaScript", "RESTful API"],
+    github: "https://github.com/BobchopGaming/RecipeApp",
     live: "https://example.com/live"
   },
   {
@@ -90,7 +91,6 @@ const Sample = () => {
           <h1 className="text-3xl sm:text-4xl md:text-5xl font-black leading-tight tracking-wide text-center">
           View My Project <span className="text-primary">Showcase</span>
             </h1>
-
           <div className="carousel-container">
             <Carousel itemsToShow={2} itemsToScroll={1} pagination={false}>
               {projectData.map((project) => (
