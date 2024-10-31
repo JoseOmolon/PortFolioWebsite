@@ -55,20 +55,20 @@ const projectData = [
   },
   {
     id: 6,
-    image: "/src/assets/WebSamples/sample6.png",
-    title: "Beautiful Spring Garden",
-    description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the",
-    technologies: ["React", "JavaScript", "HTML", "Tailwind"],
-    github: "https://github.com/example/repo",
+    image: "/src/assets/WebSamples/MilitaryStyleCountrySearch.png",
+    title: "Military-Themed Country Flag Web App",
+    description: "Military-Themed Country Flag Web App: Built with Vanilla JS and Bootstrap, this unique app pulls data from a Country Flag API to showcase flags and country information in a military-inspired theme. It’s a straightforward yet impactful project highlighting clean design and efficient data retrieval for an engaging, themed experience.",
+    technologies: ["CSS", "JavaScript", "HTML", "BootStrap", "RESTful API"],
+    github: "https://github.com/BobchopGaming/API_Country",
     live: "https://example.com/live"
   },
   {
     id: 7,
-    image: "/src/assets/WebSamples/sample7.png",
-    title: "Beautiful Spring Garden",
-    description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the",
+    image: "/src/assets/WebSamples/Gameboy-PokiApp.png",
+    title: "Gameboy-Themed Pokie Search App",
+    description: "Gameboy-Themed Pokie Search App: This nostalgic app is styled to mimic the classic Nintendo Gameboy, allowing users to search and explore Pokémon data with a retro vibe. Built with Vanilla JS and Bootstrap, it pulls live data from the Pokémon API, offering a fun blend of modern data and retro design.",
     technologies: ["React", "JavaScript", "HTML", "Tailwind"],
-    github: "https://github.com/example/repo",
+    github: "https://github.com/BobchopGaming/API_POKI",
     live: "https://example.com/live"
   },
   // Add more projects as needed...
