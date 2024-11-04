@@ -14,7 +14,7 @@ const projectData = [
     description: "Crafted with Vanilla JS, HTML, CSS, and Bootstrap, this dynamic portfolio showcases my journey into web development. A sleek, responsive design and interactive elements make this site a memorable first project.",
     technologies: ["BootStrap", "JavaScript", "HTML", "CSS"],
     github: "https://github.com/BobchopGaming/myprofile.io",
-    live: "https://bobchopgaming.github.io/myprofile.io/"
+    live: "https://joseomolon.github.io/myprofile.io/"
   },
   
   {
@@ -24,7 +24,7 @@ const projectData = [
     description: "A special web app crafted for my baby, featuring unique mini educational games and quizzes I developed, alongside curated YouTube educational videos. Built with React and Tailwind, this fully responsive app includes a custom modal video player for a seamless learning experience across all devices.",
     technologies: ["React", "JavaScript", "RESTful API", "Tailwind", "Framer-Motion"],
     github: "https://github.com/BobchopGaming/NataliaApp2",
-    live: "https://example.com/live"
+    live: "https://nataliafuneducation.netlify.app/"
   },
   {
     id: 3,
@@ -33,7 +33,7 @@ const projectData = [
     description: "TrailerTube is an interactive website I developed that pulls data from TMDB, enabling users to search for movies and shows. Discover the top trending films, view ratings, and watch trailers to help decide what to watch next. Experience movie exploration like never before with my user-friendly platform.",
     technologies: ["BootStrap", "JavaScript", "HTML", "CSS", "RESTful API"],
     github: "https://github.com/BobchopGaming/API_TrailerFlix/blob/main/index.html",
-    live: "https://example.com/live"
+    live: "https://joseomolon.github.io/TrailerFlix/"
   },
   {
     id: 4,
@@ -60,7 +60,7 @@ const projectData = [
     description: "Military-Themed Country Flag Web App: Built with Vanilla JS and Bootstrap, this unique app pulls data from a Country Flag API to showcase flags and country information in a military-inspired theme. It’s a straightforward yet impactful project highlighting clean design and efficient data retrieval for an engaging, themed experience.",
     technologies: ["CSS", "JavaScript", "HTML", "BootStrap", "RESTful API"],
     github: "https://github.com/BobchopGaming/API_Country",
-    live: "https://example.com/live"
+    live: "https://joseomolon.github.io/CountryFlagSearch/"
   },
   {
     id: 7,
@@ -69,7 +69,7 @@ const projectData = [
     description: "Gameboy-Themed Pokie Search App: This nostalgic app is styled to mimic the classic Nintendo Gameboy, allowing users to search and explore Pokémon data with a retro vibe. Built with Vanilla JS and Bootstrap, it pulls live data from the Pokémon API, offering a fun blend of modern data and retro design.",
     technologies: ["React", "JavaScript", "HTML", "Tailwind"],
     github: "https://github.com/BobchopGaming/API_POKI",
-    live: "https://example.com/live"
+    live: "https://joseomolon.github.io/API_POKI/"
   },
   // Add more projects as needed...
 ];
