@@ -42,7 +42,7 @@ const projectData = [
     description: "TaskNest is an intuitive Admin Dashboard I created, featuring a weather widget, stock tracker, calendar, to-do app, and email integration. Built with React, Material UI, and Tailwind CSS, this user-friendly platform streamlines productivity, providing essential tools all in one place for efficient task management",
     technologies: ["React", "Material-UI", "JavaScript", "Tailwind"],
     github: "https://github.com/BobchopGaming/AdminDashboard",
-    live: "https://example.com/live"
+    live: "https://tasknestadmin.netlify.app/"
   },
   {
     id: 5,
