@@ -78,7 +78,7 @@ const Hero = () => {
             variants={FadeRight(1.3)}
             initial="hidden"
             animate="visible"
-            href="https://github.com/BobchopGaming"
+            href="https://github.com/JoseOmolon"
             target="_blank"
             rel="noopener noreferrer"
             className="flex items-center justify-center w-10 h-10 rounded-full bg-gray-700 text-white hover:bg-gray-800 transition duration-300"
