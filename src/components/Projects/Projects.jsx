@@ -51,7 +51,7 @@ const projectData = [
     description: "Chef Natalia Recipe Web App is a culinary companion that lets users search for recipes by meal type, category, and preparation steps. With an intuitive interface, it simplifies discovering delicious dishes and exploring diverse cuisines. Fully responsive and interactive, it’s crafted to inspire any home chef’s next creation.",
     technologies: ["React", "Tailwind", "Framer-motion", "JavaScript", "RESTful API"],
     github: "https://github.com/BobchopGaming/RecipeApp",
-    live: "https://example.com/live"
+    live: "https://nataliarecipes.netlify.app/"
   },
   {
     id: 6,
