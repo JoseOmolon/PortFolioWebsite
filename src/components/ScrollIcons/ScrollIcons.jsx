@@ -29,7 +29,7 @@ const ScrollIcons = () => {
       {showMailIcon && (
         <div
           onClick={() => setModalOpen(true)}
-          className="fixed bottom-10 right-10 bg-lime-500 p-4 rounded-full cursor-pointer shadow-lg transition-transform transform hover:scale-110 z-50"
+          className="fixed bottom-32 right-6 bg-lime-500 p-4 rounded-full cursor-pointer shadow-lg transition-transform transform hover:scale-110 z-50"
         >
           <RiMessage2Line className="text-white text-2xl" />
         </div>
