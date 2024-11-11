@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import { BsSun, BsMoon } from "react-icons/bs";
 import { FaHome, FaProjectDiagram, FaUserAlt, FaClipboardList, FaBriefcase } from "react-icons/fa";
-
+import JoseLogo from "/assets/JoseLogo.png"
 import ResponsiveMenu from "./ResponsiveMenu";
 import Hamburger from "./Hamburger";
 import StarrySky from "../StarrySky/StarrySky"; // Import your StarrySky component
@@ -39,7 +39,7 @@ const Navbar = () => {
     <section className="relative inline-block w-full">
       <nav className="bg-transparent font-poppins z-10">
         <div className="container mx-auto flex justify-between items-center py-4 px-4">
-          <img src="/assets/JoseLogo.png" alt="Logo" className="h-12" />
+          <img src={JoseLogo} alt="Logo" className="h-12" />
           <div className="hidden md:flex items-center space-x-6 text-pretty font-light">
             {menuItems.map(({ name, icon }) => (
               <a
