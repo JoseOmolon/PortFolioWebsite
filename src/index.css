@@ -157,3 +157,10 @@ html {
     -ms-overflow-style: none;  /* Internet Explorer 10+ */
     scrollbar-width: none;  /* Firefox */
   }
+  @media (max-width: 640px) {
+    #tidio-chat {
+      width: 90% !important;
+      height: auto !important;
+      bottom: 10px;
+    }
+  }
