@@ -7,6 +7,9 @@ import ScrollIcons from "./components/ScrollIcons/ScrollIcons";
 import About from "./components/About/About";
 import SkillsCarousel from "./components/SkillsCarousel/SkillsCarousel";
 import ExperienceTimeline from "./components/ExperienceTimeline/ExperienceTimeline";
+import { Analytics } from "@vercel/analytics/react"
+import { SpeedInsights } from '@vercel/speed-insights/react';
+
 
 const App = () => {
   const [theme, setTheme] = useState(localStorage.getItem("theme") || "light");
@@ -31,6 +34,8 @@ const App = () => {
       <SkillsCarousel />
       <ExperienceTimeline />
       <ScrollIcons />
+      <Analytics />
+      <SpeedInsights />
     </>
   );
 };
