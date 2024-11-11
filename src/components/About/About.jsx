@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 import {FadeRight} from "../../utility/animation"
-import PhotoBGAvatar from "/Public/assets/WebSamples/PhotoBGAvatar.png";
+import PhotoBGAvatar from "/public/assets/WebSamples/PhotoBGAvatar.png";
 
 const About = () => {
   return (

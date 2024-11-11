@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import ProfilePic from '/Public/assets/ProfilePic.png';
+import ProfilePic from '/public/assets/ProfilePic.png';
 import { BiDownload } from "react-icons/bi";
 import { GrContact } from "react-icons/gr";
 import { FaLinkedin, FaGithub } from "react-icons/fa";
