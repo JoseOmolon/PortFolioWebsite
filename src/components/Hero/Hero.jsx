@@ -12,7 +12,7 @@ const Hero = () => {
   const [modalOpen, setModalOpen] = useState(false);
 
   const handleDownload = () => {
-    window.open('/Resume2024.pdf', '_blank');
+    window.open('/Resume.pdf', '_blank');
   };
 
   return (
