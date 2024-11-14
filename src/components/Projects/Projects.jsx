@@ -94,20 +94,24 @@ const Sample = () => {
 
   return (
     <section className="relative min-h-[700px]" id='projects'>
-        <div className="container mx-auto px-4 grid grid-cols-1 space-y-10 pt-10">
-          <h1 className="text-3xl sm:text-4xl md:text-5xl font-black leading-tight tracking-wide text-center">
-          View My Project <span className="text-primary">Showcase</span>
-            </h1>
-          <div className="carousel-container">
-            <Carousel itemsToShow={2} itemsToScroll={1} pagination={false}>
-              {projectData.map((project) => (
-                <div key={project.id} className="carousel-item" onClick={() => openModal(project)}>
-                  <img src={project.image} alt={project.title} className="carousel-image" />
-                  <h3>{project.title}</h3>
-                </div>
-              ))}
-            </Carousel>
-
+          <div className="container mx-auto px-4 pt-10">
+    <div className="flex flex-col items-center space-y-10">
+      <h1 className="text-3xl sm:text-4xl md:text-5xl font-black leading-tight tracking-wide text-center">
+        View My Project <span className="text-primary">Showcase</span>
+      </h1>
+      <p className="text-lg font-thin text-center">
+        Click/tap on the image for project details
+      </p>
+    </div>
+    <div className="carousel-container">
+      <Carousel itemsToShow={2} itemsToScroll={1} pagination={false}>
+        {projectData.map((project) => (
+          <div key={project.id} className="carousel-item" onClick={() => openModal(project)}>
+            <img src={project.image} alt={project.title} className="carousel-image" />
+            <h3>{project.title}</h3>
+          </div>
+        ))}
+      </Carousel>
             {selectedProject && (
               <div className="fixed inset-0 bg-black bg-opacity-70 flex items-center justify-center z-50" onClick={closeModal}>
                 <div
