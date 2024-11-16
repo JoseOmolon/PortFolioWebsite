@@ -21,7 +21,7 @@ const StarrySky = ({ isDarkMode }) => {
       opacity: [{ duration: 400, value: "0" }, { duration: 400, value: "1" }],
       easing: "linear",
       loop: true,
-      delay: (_, i) => 10 * i, // Increased frequency
+      delay: (_, i) => 100 * i, // Increased frequency
     });
   
     anime({
