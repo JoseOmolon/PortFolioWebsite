@@ -28,7 +28,7 @@ const StarrySky = ({ isDarkMode }) => {
       targets: "#shootingstars .wish",
       easing: "linear",
       loop: true,
-      delay: (_, i) => 200 * i, // Increased frequency of shooting stars
+      delay: (_, i) => 2000 * i, // Increased frequency of shooting stars
       opacity: [{ duration: 500, value: "1" }],
       width: [{ value: "150px" }, { value: "0px" }],
       translateX: 350,
