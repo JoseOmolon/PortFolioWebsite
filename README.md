@@ -4,7 +4,7 @@ Welcome to my portfolio website repository! This project is a showcase of my jou
 
 **[Live Website](https://www.joseomolon.com/)**
 
-![Portfolio Website Screenshot](https://user-images.githubusercontent.com/your-screenshot.png) <!-- You can add a link to a screenshot image here -->
+![Portfolio Website Screenshot](PortScreenshot.png) <!-- You can add a link to a screenshot image here -->
 
 ## 🎯 Project Overview
 
