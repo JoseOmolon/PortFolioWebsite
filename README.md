@@ -6,7 +6,7 @@ Welcome to my portfolio website repository! This project is a showcase of my jou
 
 ![Portfolio Website Screenshot](PortScreenshot.png) <!-- You can add a link to a screenshot image here -->
 
-## 🎯 Project Overview 1
+## 🎯 Project Overview 
 
 This portfolio website is a modern, responsive, and intuitive platform created to:
 - Showcase my skills, projects, and professional journey.
