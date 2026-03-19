@@ -1,4 +1,4 @@
-# 🌐 Jose Omolon - Portfolio Website 123
+# 🌐 Jose Omolon - Portfolio Website 12
 
 Welcome to my portfolio website repository! This project is a showcase of my journey as a web developer, reflecting my passion for crafting seamless, interactive, and user-friendly web experiences. It’s designed to highlight my skills and to connect with potential employers, collaborators, and clients.
 
